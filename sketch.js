@@ -31,3 +31,4 @@ function setup() {
     text(name, 0, 0);
     pop();
   }
+  }
