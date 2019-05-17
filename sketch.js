@@ -1,42 +1,33 @@
-
-let spirit;
-let souls  = []
-
+let input, button, greeting;
 function setup() {
-createCanvas(600, 400);
-  for (let i = 0; i  < 2; i++) {
-    let x = 10 *i
-  souls[i] = new Soul(x,300,200);
+ createCanvas(710, 400);
+
+  input = createInput();
+  input.position(20, 65);
+   button = createButton('submit');
+  button.position(input.x + input.width, 65);
+  button.mousePressed(greet);
+  
+  greeting = createElement('h2', 'what is your name?');
+  greeting.position(20, 5);
+
+  textAlign(CENTER);
+  textSize(50);
+  
+ 
+  textSize(15);
+  noStroke();
   }
-}
+  function greet() {
+  const name = input.value();
+  greeting.html('hello ' + name + '!');
+  input.value('');
 
-function draw() {
-background(0);
-    for (let i = 0; i  < 2; i++){
-
-souls[i].move();
-souls[i].show();
-    }
-}
-
-class Soul {
-  constructor() {
-    this.x = 300;
-    this.y = 200;
+  for (let i = 0; i < 200; i++) {
+    push();
+    fill(random(255), 255, 255);
+    translate(random(width), random(height));
+    rotate(random(2 * PI));
+    text(name, 0, 0);
+    pop();
   }
-
-move() {
-this.x = this.x + random(-5, 5);
-this.y = this.y + random(-5, 5);
-}
-
-show() {
-stroke('violet');
-strokeWeight(4);
-
-fill('blue');
-ellipse(this.x, this.y, 24, 24);
-}
-
-
-}
