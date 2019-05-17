@@ -31,12 +31,6 @@ function greet() {
   }
 
 function draw() {
-  //const r = rSlider.value();
- // const g = gSlider.value();
-  //const b = bSlider.value();
-  //background(r, g, b);
- // text('red', rSlider.x + 50 + rSlider.width, 35);
-  //text('green', gSlider.x + 50 + gSlider.width, 65);
-  //text('blue', bSlider.x + 50 + bSlider.width, 95);
+
 }
 }
