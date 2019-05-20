@@ -26,14 +26,14 @@ function greet() {
   
   for (let i = 0; i < 200; i++) {
     push();
-  constructor() {
-    this.x = 300;
-    this.y = 200;
-  }
+  
+
 
  beginShape()  
 push()
-  
+  stroke('black')
+    this.x = 300
+    this.y = 200
   ellipse(this.x,this.y ,20,20)
   push()
   fill(255, 255,0)
