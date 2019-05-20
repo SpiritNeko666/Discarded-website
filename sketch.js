@@ -35,18 +35,26 @@ push()
     this.x = 300
     this.y = 200
     push()
+    strokeJoin(ROUND);
+
   ellipse(this.x,this.y+20, 10,30)
     ellipse(this.x+15,this.y+10, 35,8)
     ellipse(this.x-15,this.y+10, 35,8)
     ellipse(this.x,this.y+40, 10,35)
+    
+      ellipse(this.x+5,this.y-8 ,10,10)
+      ellipse(this.x-5,this.y-8 ,10,10)
 
   ellipse(this.x,this.y ,20,20)
   push()
   ellipse(this.x,this.y ,20,20)
+  ellipse(this.x,this.y+6 ,2,2)
+
   push()
   fill(255, 255,0)
   ellipse(this.x+3.5,this.y,5,5)
   ellipse(this.x-3.5,this.y ,5,5)
+    
 pop()
   line(this.x+3,this.y+1 ,this.x+3, this.y-1.5 )
   line(this.x-4,this.y +1,this.x-4, this.y-1.5 )
