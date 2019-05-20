@@ -1,6 +1,6 @@
 let input, button, greeting;
 function setup() {
- createCanvas(710, 400);
+ createCanvas(1710, 1400);
 background(200,200,200)
   input = createInput();
   input.position(20, 65);
