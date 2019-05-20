@@ -1,7 +1,7 @@
 let input, button, greeting;
 function setup() {
  createCanvas(710, 400);
-
+background(200,200,200)
   input = createInput();
   input.position(20, 65);
    button = createButton('submit');
