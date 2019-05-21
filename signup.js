@@ -22,8 +22,10 @@ function setup() {
 
 function greet() {
   const name = username.value();
+  const code = password.value();
   greeting.html('hello ' + name + '!');
   username.value('');
+  password.value('');
 
   
 }
