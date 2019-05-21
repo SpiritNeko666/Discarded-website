@@ -13,9 +13,9 @@ function setup() {
   button.mousePressed(greet);
   button.mousePressed(greet);
   passcode = createElement('h2', 'Password');
-  passcode.position(20, 140);
+  passcode.position(20, 120);
   greeting = createElement('h2', 'Username');
-  greeting.position(20, 40);
+  greeting.position(20, 20);
   textAlign(CENTER);
   textSize(50);
 }
@@ -25,7 +25,7 @@ function greet() {
   const code = password.value();
   greeting.html('hello ' + name + '!');
   username.value('');
-  password.value('');
+  passcode.html('your password is ' + code + '!');
 
   
 }
