@@ -5,9 +5,9 @@ function setup() {
   createCanvas(710, 400);
 
   username = createInput();
-  username.position(150, 65);
+  username.position(250, 65);
   password = createInput();
-  password.position(150, 165);
+  password.position(250, 165);
   button = createButton('submit');
 
   button.mousePressed(greet);
@@ -23,7 +23,6 @@ function setup() {
 function greet() {
   const name = username.value();
   const code = password.value();
-  greeting.html('hello ' + name + '!');
   username.value('');
   password.value('');
 
