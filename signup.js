@@ -26,6 +26,7 @@ function greet() {
   greeting.html('hello ' + name + '!');
   username.value('');
   password.value('');
+<p><a href="https://spiritneko666.github.io/login.html">Login </a> Login to a Existing Account.</p>
 
   
 }
