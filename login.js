@@ -22,9 +22,9 @@ function setup() {
 }
 
 function greet() {
-  const name = input.value();
+  const name = username.value();
   greeting.html('hello ' + name + '!');
-  input.value('');
+  username.value('');
 
   for (let i = 0; i < 200; i++) {
     push();
