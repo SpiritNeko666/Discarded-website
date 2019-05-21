@@ -22,11 +22,8 @@ function setup() {
 
 function greet() {
   const name = username.value();
-  const code = password.value();
   greeting.html('hello ' + name + '!');
   username.value('');
-  password.value('');
-<p><a href="https://spiritneko666.github.io/profile.html">Profile </a> Login to a Existing Account.</p>
 
   
 }
