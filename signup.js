@@ -26,6 +26,7 @@ function greet() {
   greeting.html('hello ' + name + '!');
   username.value('');
   passcode.html('your password is ' + code + '!');
+  password.value('');
 
   
 }
