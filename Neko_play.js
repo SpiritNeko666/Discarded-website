@@ -7,7 +7,6 @@ function setup() {
     createCanvas(1000, 1000);
     neko = new Neko(100,20);
     food = new Food(100,20);
-    danger = new Danger(100,20);
 }
 
 function draw() {
@@ -16,10 +15,8 @@ function draw() {
     neko.follow()
     neko.life()
     food.show()
-danger.show()
     text('Feed', 900,50)
     textSize(20)
-    neko.take()
 
 
 
