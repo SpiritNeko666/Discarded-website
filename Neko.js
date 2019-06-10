@@ -13,7 +13,7 @@ function draw() {
 function mouseWheel(event) {
   //move the square according to the vertical scroll amount
 
-  pos_y += event.delta;
+  //pos_y += event.delta;
   //uncomment to block page scrolling
   return(false)
 }

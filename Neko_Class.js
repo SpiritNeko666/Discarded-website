@@ -1,12 +1,20 @@
+
+
+
 class Neko {
     constructor() {
-        this.x = 200
-        this.y = 200 + pos_y
-        this.hp = 300
+        this.x = 0 = pos_x
+        this.y = 0 + pos_y
+        danger.x = 0
+        danger.y = 0
+        this.hp = neko_hp
+        this.taken = neko_taken
+        var pos_y = 5
+
     }
 
     show() {
-        push
+        push()
         noStroke('white')
         beginShape()
         fill('white')
@@ -60,4 +68,51 @@ class Neko {
         this.y = mouseY;
     }
 
+    life() {
+
+        textAlign(CENTER);
+        fill('white')
+        text('life:'+[neko_hp-neko_taken], this.x, this.y-50)
+    }
+    take(){
+        if (20 < this.x - danger.x){
+            neko_taken = neko_taken+10
+        }
+    }
 }
+
+
+class Food {
+    constructor() {
+        this.x = 900
+        this.y = 100
+    }
+    show(){
+        push()
+        fill('maroon')
+        ellipse(this.x,this.y,10,20)
+        ellipse(this.x+15,this.y,10,20)
+        ellipse(this.x+15,this.y+15,10,20)
+        ellipse(this.x,this.y+15,10,20)
+pop()
+
+    }
+}
+
+class Danger {
+    constructor() {
+        this.x = 500
+        this.y = 500
+    }
+
+    show() {
+        push()
+        fill('red')
+
+        ellipse(this.x + 15, this.y + 15, 100, 200)
+
+        pop()
+    }
+}
+
+

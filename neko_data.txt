@@ -1,0 +1,7 @@
+Neko Info
+
+Attack:50
+Speed:75
+Hp:100
+Magic:75
+Defence:50
